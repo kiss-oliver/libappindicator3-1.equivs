@@ -1,0 +1,8 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Package: libappindicator3-1
+Maintainer: Oliver Kiss
+Depends: libayatana-appindicator3-1
+
+Description: Equivs package to circumvent libappindicator3-1 dependencies in bullseye
