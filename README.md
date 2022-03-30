@@ -1,5 +1,13 @@
 # libappindicator3-1.equivs
-A built equivs package to circumvent libappindicator3-1 dependencies in bullseye
+A built equivs package to circumvent `libappindicator3-1` dependencies in bullseye. `libappindicator3-1` is no longer supported in Debian 11, but multiple apps (including Slack for example) depend on it. An alternative is using `libayatana-appindicator3-1`. This is repo contains a mock `libappindicator3-1` package that points to `libayatana-appindicator3-1`. This way you don't need to install fishy versions of `libappindicator3-1` and the dependency remains satisfied even if your app receives an update.
+
+## Usage
+
+Download the `.deb` package then `sudo dpkg -i libappindicator3-1_1.0_all.deb`.
+
+Alternatively, you can build the package yourself by doqnloading the `.equivs` file and then `equivs-build libappindicator3-1.equivs`
+
+## Checksums
 
 Checksums-Md5:
 
